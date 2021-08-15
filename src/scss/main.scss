@@ -1,14 +1,9 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main';
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";
 
 .page__container {
   height: 100vh;
-  font-family: $font-main;
-  background-color: $yellow;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
