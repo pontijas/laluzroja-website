@@ -1,0 +1,39 @@
+.projects {
+  &__container {
+    border: 1px solid $black;
+    margin: 2em 2em;
+    padding: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  &__img {
+    &-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    margin: 1em 0;
+    height: 20em;
+  }
+  &__section {
+    margin-bottom: 2em;
+    font-size: 0.85em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    &-title {
+      // border: 2px solid greenyellow;
+    }
+    &-display {
+      // border: 2px solid fuchsia;
+      width: 70%;
+      padding-left: 2em;
+      display: flex;
+      flex-flow: column wrap;
+    }
+    &-article {
+      margin-bottom: 2em;
+    }
+  }
+}
