@@ -1,0 +1,50 @@
+.info {
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__bio {
+    width: 60%;
+    padding: 3em 2em;
+    &-text {
+      padding: 2em 0;
+      text-align: justify;
+      font-size: 0.85em;
+    }
+  }
+  &__contact {
+    width: 40%;
+    padding: 3em 2em;
+    &-data {
+      padding: 2em 0;
+      display: flex;
+      flex-flow: column wrap;
+      &-link {
+        text-decoration: none;
+        padding-bottom: 1em;
+        color: $red;
+        transition: 0.3s ease color;
+        &:hover {
+          color: $grey;
+        }
+      }
+    }
+  }
+  &__icon {
+    &-container {
+      padding-bottom: 2em;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+    }
+    height: 2em;
+    width: 2em;
+    fill: $black;
+    transition: 0.3s ease fill;
+    &:hover {
+      fill: $red;
+    }
+  }
+}
