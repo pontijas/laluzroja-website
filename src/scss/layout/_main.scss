@@ -1,0 +1,107 @@
+.main {
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__intro {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  &__text {
+    color: $indigo;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1em;
+  }
+  &__img {
+    width: 80vw;
+  }
+  &__title-img {
+    width: 50vw;
+    padding-top:1rem;
+    opacity: 0;
+    animation-name: opacity;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  &__text-img {
+    margin-top: 1rem;
+    width: 80vw;
+    opacity: 0;
+    animation-name: opacity;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  &_poem{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    width: 100%;
+    background-color: $white;
+    &-text{
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      line-height: 3rem;
+      font-style: italic;
+    }
+  }
+}
+
+// animation
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+//responsive
+@media all and (min-width: 600px) {
+  .main {
+    &__img {
+      width: 50vw;
+    }
+    &__title {
+      font-size: 3.75rem;
+    }
+    &__text {
+      font-size: 1.25rem;
+    }
+    &__title-img {
+      width: 60vw;
+    }
+    &__text-img {
+      width: 50vw;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main {
+    &__img {
+      width: 40vw;
+    }
+    &__title {
+      font-size: 3.75rem;
+    }
+    &__text {
+      font-size: 1.5rem;
+    }
+    &__title-img {
+      width: 40vw;
+    }
+    &__text-img {
+      width: 30vw;
+    }
+  }
+}
