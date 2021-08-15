@@ -6,12 +6,20 @@
     justify-content: center;
   }
   &__intro {
+    width: 40%;
+    border: 1px solid $white;
+    padding: 1em 4.5em;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+    &:hover {
+      border: 1px solid $red;
+      transition: 1s ease border;
+      cursor: pointer;
+    }
   }
   &__img {
-    width: 50%;
+    width: 100%;
   }
 }
