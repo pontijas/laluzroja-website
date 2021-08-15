@@ -2,6 +2,12 @@
   &__container {
     display: flex;
     flex-flow: row nowrap;
+    &-page {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      height: 100vh;
+    }
   }
   &__bio {
     width: 60%;
