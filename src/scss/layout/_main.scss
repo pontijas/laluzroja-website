@@ -1,1 +1,17 @@
-
+.main {
+  &__container {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__intro {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    width: 50%;
+  }
+}
